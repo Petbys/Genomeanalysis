@@ -1,0 +1,48 @@
+Genomeanalysis
+|_Analyses
+|    |_Genome_assembly
+|    |      |
+|    |      |_1_0_preprocessing.sh
+|    |      |      
+|    |      |_1_1_genome_assembly.sh
+|    |      |
+|    |      |_1_2_annotation
+|    |
+|    |_RNA_seq
+|         |_2_1_xxx.sh
+|         |      
+|         |_2_2_xxx.sh
+|         |
+|         |_2_3_xxx.sh
+|
+|
+|_Code
+|    |_Genome_assembly
+|    |      |
+|    |      |_1_0_preprocessing.sh
+|    |      |      
+|    |      |_1_1_genome_assembly.sh
+|    |      |
+|    |      |_1_2_annotation
+|    |
+|    |_RNA_seq
+|         |_2_1_xxx.sh
+|         |      
+|         |_2_2_xxx.sh
+|         |
+|         |_2_3_xxx.sh
+|         
+| 
+|_Data
+    |__Raw_data
+    |      |
+    |      |_Genome_sequence_data
+    |      |
+    |      |_RNA_seq_data
+    |      |
+    |      |_Tn_seq_data
+    |
+    |_Trimmed data
+    |
+    |
+    |_Trimmed data
