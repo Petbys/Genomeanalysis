@@ -1,20 +1,35 @@
 Genomeanalysis
 |_Analyses
-|    |_Genome_assembly
+|    |_01_preprocessing
 |    |      |
-|    |      |_1_0_preprocessing.sh
+|    |      |_1_1_FastQC.sh
 |    |      |      
-|    |      |_1_1_genome_assembly.sh
-|    |      |
-|    |      |_1_2_annotation
+|    |      |_1_2_Trimmomatic.sh
 |    |
-|    |_RNA_seq
-|         |_2_1_xxx.sh
-|         |      
-|         |_2_2_xxx.sh
-|         |
-|         |_2_3_xxx.sh
-|
+|    |_02_Assembly
+|    |      |
+|    |      |_2_1_Canu.sh
+|    |      |    
+|    |      |_2_2_Spades.sh
+|    |      |    
+|    |      |_2_3_BWA.sh
+|    |      |    
+|    |      |_2_4_Pilon.sh
+|    |
+|    |_03_Evaluation
+|    |     |_3_1_Quast.sh
+|    |     |      
+|    |     |_3_2_MUMmerplot.sh
+|    |
+|    |_04_Annotation
+|    |     |      
+|    |     |_
+|    |
+|    |_05_Annotation
+|    |     |      
+|    |     |_
+|    |
+|    |_06_Annotation
 |
 |_Code
 |    |_Genome_assembly
