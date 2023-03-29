@@ -51,11 +51,29 @@ Genomeanalysis
 |_Data
     |__Raw_data
     |      |
-    |      |_Genome_sequence_raw
+    |      |_Genomics
+    |      |   |_Illumina
+    |      |   |      
+    |      |   |_PacBio
+    |      |   |      
+    |      |   |_Nanopore
     |      |
-    |      |_Transcriptomics_raw
-    |      |
-    |      |_Tn_seq_data
+    |      |_Transcriptomics
+    |         |_RNA-seq
+    |         |     |
+    |         |     |_BH
+    |         |     |
+    |         |     |_Serum
+    |         |      
+    |         |_Tn-seq
+    |              |
+    |              |_BHI
+    |              |
+    |              |_Hserum
+    |              |
+    |              |_Serum
+    |      
+    |      
     |
     |_Trimmed data
     
