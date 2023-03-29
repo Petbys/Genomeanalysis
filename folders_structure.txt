@@ -1,5 +1,5 @@
 Genomeanalysis
-|_Analyses
+|_code
 |    |_01_preprocessing
 |    |      |
 |    |      |_1_1_FastQC.sh
@@ -12,8 +12,6 @@ Genomeanalysis
 |    |      |    
 |    |      |_2_2_Spades.sh
 |    |      |    
-|    |      |_2_3_BWA.sh
-|    |      |    
 |    |      |_2_4_Pilon.sh
 |    |
 |    |_03_Evaluation
@@ -23,31 +21,50 @@ Genomeanalysis
 |    |
 |    |_04_Annotation
 |    |     |      
-|    |     |_
+|    |     |_4_1_Prokka.sh
 |    |
-|    |_05_Annotation
+|    |_05_Synteny
 |    |     |      
-|    |     |_
+|    |     |_5_1_Blastn.sh
 |    |
-|    |_06_Annotation
-|
-|_Code
-|    |_Genome_assembly
+|    |_06_Transcriptomics
+|          |      
+|          |_6_1_BWA.sh
+|          |      
+|          |_6_2_Htseq.sh
+|_Analyses
+|    |_01_preprocessing
 |    |      |
-|    |      |_1_0_preprocessing.sh
+|    |      |_FastQC
 |    |      |      
-|    |      |_1_1_genome_assembly.sh
-|    |      |
-|    |      |_1_2_annotation
+|    |      |_Trimmomatic
 |    |
-|    |_RNA_seq
-|         |_2_1_xxx.sh
-|         |      
-|         |_2_2_xxx.sh
-|         |
-|         |_2_3_xxx.sh
-|         
-| 
+|    |_02_Assembly
+|    |      |
+|    |      |_Canu
+|    |      |    
+|    |      |_Spades
+|    |      |    
+|    |      |_Pilon
+|    |
+|    |_03_Evaluation
+|    |     |_Quast
+|    |     |      
+|    |     |_MUMmerplot
+|    |
+|    |_04_Annotation
+|    |     |      
+|    |     |_Prokka
+|    |
+|    |_05_Synteny
+|    |     |      
+|    |     |_Blast
+|    |
+|    |_06_Transcriptomics
+|          |      
+|          |_RNA-seq
+|          |   
+|          |_Tn-seq
 |_Data
     |__Raw_data
     |      |
