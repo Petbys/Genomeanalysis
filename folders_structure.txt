@@ -51,13 +51,11 @@ Genomeanalysis
 |_Data
     |__Raw_data
     |      |
-    |      |_Genome_sequence_data
+    |      |_Genome_sequence_raw
     |      |
-    |      |_RNA_seq_data
+    |      |_Transcriptomics_raw
     |      |
     |      |_Tn_seq_data
     |
     |_Trimmed data
-    |
-    |
-    |_Trimmed data
+    
