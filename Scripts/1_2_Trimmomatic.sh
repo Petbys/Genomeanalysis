@@ -12,12 +12,10 @@ module load bioinfo-tools
 module load trimmomatic/0.36 
 module load java/sun_jdk1.8.0_151
 
-id = "illumina"
+id = illumina
 
-output = /home/pette/Genome_Analysis_Local/Analyses/01_preprocessing
+output = /home/pette/Genome_Analysis_Local/Analyses/01_preprocessing/Trimmomatic
 read1= /home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Illumina/E745-1.L500_SZAXPI015146-56_1*
 read2= /home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Illumina/E745-1.L500_SZAXPI015146-56_2*
 
-
-
-java -jar $TRIMMOMATIC_HOME/trimmomatic.jar PE -phred33 $read1 $read2 ${id}.trimmomatic_r1_P ${id}.trimmomatic_r1_U ${id}.trimmomatic_r2_P ${id}.trimmomatic_r2_U TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+java -jar $TRIMMOMATIC_HOME/trimmomatic.jar PE -phred33 $read1 $read2 $output/trimmomatic_r1_P $output/trimmomatic_r1_U $output/trimmomatic_r2_P $output/trimmomatic_r2_U TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
