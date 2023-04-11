@@ -3,7 +3,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
-#SBATCH -t 15:00 --qos=short
+#SBATCH -t 04:00:00
 #SBATCH -j Canu_Petter
 #SBATCH --mail-type=All
 #SBATCH --mail-user petter.bystrom.8041@student.uu.se
@@ -19,8 +19,7 @@ read5= /home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Nanopore/m13
 read6= /home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Nanopore/m131024_200535_42174_c100563672550000001823084212221342_s1_p0.2.subreads.fastq.gz
 read6= /home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Nanopore/m131024_200535_42174_c100563672550000001823084212221342_s1_p0.3.subreads.fastq.gz
 
-output = "/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Canu
+output=/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Canu
 
-input = "/home/pette/Genome_Analysis_Local/Data/raw_data/genomics_raw/Nanopore/"
 canu -p E745 -d $output genomeSize=4.5m -pacbio $read1 -nanopore $read2 $read3 $read4 $read5 $read6 $read_7
 
