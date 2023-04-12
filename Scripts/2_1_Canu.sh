@@ -3,7 +3,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
-#SBATCH -t 04:00:00
+#SBATCH -t 06:00:00
 #SBATCH -J Canu_Petter
 #SBATCH --mail-type=All
 #SBATCH --mail-user petter.bystrom.8041@student.uu.se
