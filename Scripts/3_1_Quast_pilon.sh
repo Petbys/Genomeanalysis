@@ -11,7 +11,8 @@
 module load bioinfo-tools
 module load quast
 
-output="/home/pette/Genome_Analysis_Local/Analyses/03_Evaluation/Canu_ref"
-input="/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Canu/E745_2.contigs.fasta"
+output="/home/pette/Genome_Analysis_Local/Analyses/03_Evaluation/Pilon"
+input="/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Pilon/pilon.fasta"
 reference="/home/pette/Genome_Analysis_Local/Data/reference/*"
-quast.py $input -r $reference -o $output --gene-finding 
+quast.py $input -r $reference -o $output --gene-finding
+

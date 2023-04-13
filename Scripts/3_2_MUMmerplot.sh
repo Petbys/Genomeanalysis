@@ -1,10 +1,10 @@
-#/bin/bash -l
+#!/bin/bash -l
 #SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 15:00 --qos=short
-#SBATCH -j FastQC_Technique_Petter
+#SBATCH -J Mummerplot_Petter
 #SBATCH --mail-type=All
 #SBATCH --mail-user petter.bystrom.8041@student.uu.se
 
