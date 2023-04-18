@@ -11,8 +11,10 @@
 module load bioinfo-tools
 module load MUMmer
 output="/home/pette/Genome_Analysis_Local/Analyses/03_Evaluation/MUMmer"
-input="/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Pilon/pilon.fasta"
+input="/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Spades/contigs.fasta"
 reference="/home/pette/Genome_Analysis_Local/Data/reference/*"
-nucmer --mum -p nucmer_pilon $reference $input
-cd /home/pette/Genome_Analysis_Local/Analyses/03_Evaluation/MUMmer
-mummerplot -p nucmer_pilon --png -l ./nucmer_pilon.delta
+nucmer --mum -p nucmer_spades $reference $input
+mummerplot -p nucmer_spades --png -l ./nucmer_spades.delta
+
+
+
