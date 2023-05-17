@@ -1,37 +1,8 @@
+
+Local Folder structure
+
 Genomeanalysis
-|_code
-|    |_01_preprocessing
-|    |      |
-|    |      |_1_1_FastQC.sh
-|    |      |      
-|    |      |_1_2_Trimmomatic.sh
-|    |
-|    |_02_Assembly
-|    |      |
-|    |      |_2_1_Canu.sh
-|    |      |    
-|    |      |_2_2_Spades.sh
-|    |      |    
-|    |      |_2_4_Pilon.sh
-|    |
-|    |_03_Evaluation
-|    |     |_3_1_Quast.sh
-|    |     |      
-|    |     |_3_2_MUMmerplot.sh
-|    |
-|    |_04_Annotation
-|    |     |      
-|    |     |_4_1_Prokka.sh
-|    |
-|    |_05_Synteny
-|    |     |      
-|    |     |_5_1_Blastn.sh
-|    |
-|    |_06_Transcriptomics
-|          |      
-|          |_6_1_BWA.sh
-|          |      
-|          |_6_2_Htseq.sh
+|
 |_Analyses
 |    |_01_preprocessing
 |    |      |
