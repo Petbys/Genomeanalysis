@@ -1,16 +1,21 @@
-#/bin/bash -l
+#!/bin/bash -l
 #SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 15:00 --qos=short
-#SBATCH -j FastQC_Technique_Petter
+#SBATCH -t 6:00:00
+#SBATCH -J Prokka_Petter
 #SBATCH --mail-type=All
 #SBATCH --mail-user petter.bystrom.8041@student.uu.se
 
 module load bioinfo-tools
-module load FastQC/0.11.9
+module load prokka
 
-output = "/home/pette/Genome_Analysis_Local/Analyses/04_Annotation"
-read1=$1
-fastqc $read1 -o $output --threads 1
+prokka \
+--outdir /home/pette/Genome_Analysis_Local/Analyses/04_Annotation/Prokka_canu_pilon \
+--prefix /Canu_pilon_annotation_prokka \
+--genus Enterococcus \
+--species faecium \
+--strain E745 \
+--gram pos \
+/home/pette/Genome_Analysis_Local/Analyses/02_Assembly/Pilon/pilon.fasta
